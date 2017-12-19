@@ -10,7 +10,10 @@ package Q741;
 public class main {
     public static void main(String[] args) {
         int grid[][] = {{0, 1, -1},{1, 0, -1},{1, 1,  1}};
+//        int n = grid.length;
+//        int m = grid[0].length;
         int i = cherryPickup(grid);
+
         System.out.println(i);
     }
     //需要明白几点
