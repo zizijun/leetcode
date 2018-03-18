@@ -3,6 +3,10 @@ package Q005;
 /**
  * Created by jinchuyang on 2018/3/18.
  */
+
+/**
+ * 判断一个字符串中是是否存在回文，并返回最长的回文字符串
+ */
 public class main {
     public static void main(String[] args) {
         String s = "abcda";
@@ -19,7 +23,7 @@ public class main {
             extendPalindrome(s, i, i);
             extendPalindrome(s, i, i + 1);
         }
-        return s.substring(start, start + max);
+        return s.substring(start, start + max);  //字符串substring两个参数理解：(起始位置，起始位置+长度)
     }
 
     static void extendPalindrome(String s, int i, int j){
