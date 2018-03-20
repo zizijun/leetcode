@@ -1,7 +1,8 @@
-package Q18;
+package Q018;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -10,6 +11,7 @@ import java.util.List;
 public class main {
 
     public List<List<Integer>> fourSum(int[] nums, int target) {
+
         List<List<Integer>> res = new ArrayList<>();
         Arrays.sort(nums);
         int length = nums.length;
