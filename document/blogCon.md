@@ -1,7 +1,8 @@
 ## 找实习遇到的好帖者
 
-* Java 虚拟机
+* Java 
 1. [Java中为什么静态方法不能被重写？为什么静态方法不能隐藏实例方法](http://blog.csdn.net/dawn_after_dark/article/details/74357049)
+2. [Java网络编程](http://blog.csdn.net/column/details/javasocket.html)
 
 * Spring
 1. [Spring源码深度解析（一）Spring的整体架构](http://blog.csdn.net/u012291108/article/details/51669900) 
@@ -11,3 +12,12 @@
 
 * 算法
 1. [排序算法](http://bubkoo.com/tags/sort/)
+
+
+* 哈希
+1. [hash算法原理详解](http://blog.csdn.net/tanggao1314/article/details/51457585)
+
+* 网络
+1. [TCP用塞控制](https://www.cnblogs.com/losbyday/p/5847041.html)
+2. [三次握手、四次握手内容整理](http://blog.csdn.net/qq_18425655/article/details/52163228)
+3. [HTTP请求、响应报文格式](http://blog.csdn.net/a19881029/article/details/14002273)
