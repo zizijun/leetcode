@@ -1,4 +1,4 @@
-请介绍一项你最热爱、最擅长的专业领域，并且介绍你在这个领域的学习经历和未来的学习规划。
+##请介绍一项你最热爱、最擅长的专业领域，并且介绍你在这个领域的学习经历和未来的学习规划。
 Java研发
 
 [学习经历] 第一次接触Java是在大一的课上，还记得第一次调通"hello world"的兴奋场景，之后慢慢学习了集合框架等java知识，慢慢的从开发第一个Swing项目，到第一个Web项目。
@@ -9,7 +9,7 @@ Java研发
 
 
 
-请介绍你参与的印象最深刻的一个项目，为什么？并且介绍你在项目中的角色和发挥的作用。
+##请介绍你参与的印象最深刻的一个项目，为什么？并且介绍你在项目中的角色和发挥的作用。
 那是我研究生进入实验室的第一个项目，做的文件控制系统与外高桥船厂的合作项目。印象最深刻的原因有以下几点：
 第一：这是我做过的作为庞大，功能最复杂的项目，共计39个包，256个java文件，40697行代码；
 第二：这是我接触的第一个有甲方爸爸的项目，在与甲方做需求工程的时候，学到了很多，代码不急着写，先定需求，及时反馈，在满足可行性的前提下满足甲方需求。
@@ -17,7 +17,74 @@ Java研发
 [发挥的作用]：组织架构管理、发文管理(包括新增发文、生成文件、发送文件、下载发文)在测试服务器部署项目，调通流程
 
 
-你最期望在阿里巴巴工作（或实习）的部门或项目是什么？请介绍下你对该部门的了解和希望加入的原因。
+##你最期望在阿里巴巴工作（或实习）的部门或项目是什么？请介绍下你对该部门的了解和希望加入的原因。
+
+##请介绍一些下你在项目遇到的最大挑战
+大文件上传与下载：(FTP文件服务器)
+1.将FTP参数写在配置文件中，ftpconfig.properties，将配置文件转化为字节流，在用property去load，获取参数
+2.使用枚举类型定义了上传下载的状态码（UploadStatus/DownloadStatus）
+3.自定义FileAction类封装了Apache Commons Net提供的FTP接口
+```
+ftpClient.connect(ftpURL, ftpport); //连接
+```
+```
+if (ftpClient.isConnected()) { // 断开
+            ftpClient.disconnect();
+        }
+```
+
+4.使用（UploadFileThread）和（DownloadFileThread）实现Callable，实现了上传文件和下载文件线程的相关逻辑
+5.在这两个线程中使用FileAction中封装的FTP操作接口与自定义的回调方法
+6.回调方法使用工厂模式, 并实现更新了附件表的相关信息
+7.解决中文乱码问题：
+```
+/** 本地字符编码 */
+    private static String LOCAL_CHARSET = "GBK";
+
+    // FTP协议里面，规定文件名编码为iso-8859-1
+    private static String SERVER_CHARSET = "ISO-8859-1";
+    // 开启服务器对UTF-8的支持，如果服务器支持就用UTF-8编码，否则就使用本地编码（GBK）.
+                try {
+                    if (FTPReply.isPositiveCompletion(client.sendCommand(
+                            "OPTS UTF8", "ON"))) {
+                        LOCAL_CHARSET = "UTF-8";
+                    }
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+```
+
+8.在具体下载的时候，首先创建一个线程池
+（线程池的好吃：1.减少在创建和销毁线程上所花的时间以及系统资源的开销 
+ 2.如不使用线程池，有可能造成系统创建大量线程而导致消耗完系统内存）
+
+9. 文件打包使用ZipArchiveOutputStream，
+压缩：zaos.putArchiveEntry(new ZipArchiveEntry(pathName + files[i].getName()));每一个单独的文件是一个ZipArchiveEntry
+```
+zaos.putArchiveEntry(new ZipArchiveEntry(pathName + files[i].getName()));
+IOUtils.copy(new FileInputStream(files[i].getAbsolutePath()), zaos);
+zaos.closeArchiveEntry();
+```
+解压：使用ZipFile.getEntries()获取压缩文件内部的文件集合；
+```
+ZipFile zf = new ZipFile(zipfile, "UTF-8");
+Enumeration zipArchiveEntrys = zf.getEntries();
+while (zipArchiveEntrys.hasMoreElements()) {
+    ZipArchiveEntry zipArchiveEntry = (ZipArchiveEntry) zipArchiveEntrys.nextElement();
+    if (zipArchiveEntry.isDirectory()) {
+        FileUtils.forceMkdir(new File(outputdir + zipArchiveEntry.getName() + File.separator));
+    } else {
+        IOUtils.copy(zf.getInputStream(zipArchiveEntry), FileUtils.openOutputStream(new File(outputdir + zipArchiveEntry.getName())));
+    }
+}
+```
+
+
+
+
+
+
+
 
 
 ##开放性问题  
