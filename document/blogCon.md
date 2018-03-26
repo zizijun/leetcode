@@ -26,3 +26,6 @@
 * git
 1. [面试中的那些 Git 问题 - 基础部分](https://www.jianshu.com/p/e1e9692f3d88)
 2. [面试当中的git问题](https://blog.csdn.net/qq_26768741/article/details/66975516)
+
+* 并发
+1. [JAVA 的wait(), notify()与synchronized同步机制](https://www.cnblogs.com/x_wukong/p/4009709.html)
