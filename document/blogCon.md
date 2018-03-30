@@ -2,7 +2,7 @@
 
 * Java 
 1. [Java中为什么静态方法不能被重写？为什么静态方法不能隐藏实例方法](http://blog.csdn.net/dawn_after_dark/article/details/74357049)
-2. [Java网络编程](http://blog.csdn.net/column/details/javasocket.html)
+
 
 * Spring
 1. [Spring源码深度解析（一）Spring的整体架构](http://blog.csdn.net/u012291108/article/details/51669900) 
@@ -22,6 +22,7 @@
 1. [TCP用塞控制](https://www.cnblogs.com/losbyday/p/5847041.html)
 2. [三次握手、四次握手内容整理](http://blog.csdn.net/qq_18425655/article/details/52163228)
 3. [HTTP请求、响应报文格式](http://blog.csdn.net/a19881029/article/details/14002273)
+4. [Java网络编程](http://blog.csdn.net/column/details/javasocket.html)
 
 * git
 1. [面试中的那些 Git 问题 - 基础部分](https://www.jianshu.com/p/e1e9692f3d88)
@@ -29,3 +30,6 @@
 
 * 并发
 1. [JAVA 的wait(), notify()与synchronized同步机制](https://www.cnblogs.com/x_wukong/p/4009709.html)
+
+* Linux
+1. [http://gywbd.github.io/posts/2014/8/50-linux-commands.html](http://gywbd.github.io/posts/2014/8/50-linux-commands.html)
