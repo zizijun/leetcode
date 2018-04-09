@@ -21,7 +21,7 @@ public class Test {
 
 //        LDRWithRecursion ldrWithRecursion = new LDRWithRecursion();
 //        ldrWithRecursion.traveral(head);
-        LDRWithNoRecursion ldrWithNoRecursion = new LDRWithNoRecursion();
-        ldrWithNoRecursion.traveral(head);
+        Traverse traverse = new LRDWithRecursion();
+        traverse.traveral(head);
     }
 }

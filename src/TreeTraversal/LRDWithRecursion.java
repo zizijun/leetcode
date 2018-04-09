@@ -3,7 +3,7 @@ package TreeTraversal;
 /**
  * Created by jinchuyang on 2018/3/16.
  */
-public class DRLWithRecursion implements Traverse{
+public class LRDWithRecursion implements Traverse{
     @Override
     public void traveral(TreeNode node){
         if (node.leftNode != null)
