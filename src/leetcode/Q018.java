@@ -1,4 +1,4 @@
-package leetcode.Q018;
+package leetcode;
 
 import java.util.ArrayList;
 import java.util.Arrays;

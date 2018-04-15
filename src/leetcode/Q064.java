@@ -1,9 +1,9 @@
-package leetcode.Q64;
+package leetcode;
 
 /**
  * Created by jinchuyang on 2017/12/17.
  */
-public class Q64 {
+public class Q064 {
     public int minPathSum(int[][] grid) {
         int m = grid.length;
         if(m == 0){

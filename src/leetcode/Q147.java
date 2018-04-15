@@ -1,4 +1,4 @@
-package leetcode.Q147;
+package leetcode;
 
 import common.ListNode;
 

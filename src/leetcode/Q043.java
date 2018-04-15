@@ -1,4 +1,4 @@
-package leetcode.Q043;
+package leetcode;
 
 /**
  * Created by jinchuyang on 2018/4/12.

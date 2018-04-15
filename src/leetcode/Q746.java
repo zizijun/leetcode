@@ -1,4 +1,4 @@
-package leetcode.Q746;
+package leetcode;
 
 /**
  * Created by jinchuyang on 2018/1/15.

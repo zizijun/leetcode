@@ -1,4 +1,4 @@
-package leetcode.Q72;
+package leetcode;
 
 /**
  * Created by jinchuyang on 2017/12/17.

@@ -1,4 +1,4 @@
-package leetcode.Q059;
+package leetcode;
 
 /**
  * Created by jinchuyang on 2018/3/21.

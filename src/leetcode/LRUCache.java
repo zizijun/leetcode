@@ -1,4 +1,4 @@
-package leetcode.Q146;
+package leetcode;
 
 import java.util.*;
 

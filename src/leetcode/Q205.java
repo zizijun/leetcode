@@ -1,4 +1,4 @@
-package leetcode.Q205;
+package leetcode;
 
 /**
  * Created by jinchuyang on 2018/3/18.

@@ -1,4 +1,4 @@
-package leetcode.Q021;
+package leetcode;
 
 /**
  * Created by jinchuyang on 2017/9/26.

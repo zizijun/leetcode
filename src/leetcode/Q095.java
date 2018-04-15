@@ -1,4 +1,4 @@
-package leetcode.Q95;
+package leetcode;
 
 import leetcode.TreeNode;
 

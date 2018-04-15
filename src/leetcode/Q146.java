@@ -1,11 +1,11 @@
-package leetcode.Q146;
+package leetcode;
 
 /**
  * Created by jinchuyang on 2018/4/8.
  */
 public class Q146 {
     public static void main(String[] args) {
-        leetcode.Q146.LRUCache lruCache = new leetcode.Q146.LRUCache(1);
+        LRUCache lruCache = new LRUCache(1);
         lruCache.put(2, 1);
         //lruCache.put(2, 2);
         lruCache.get(2);

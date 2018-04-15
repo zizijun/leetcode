@@ -1,4 +1,4 @@
-package leetcode.Q83;
+package leetcode;
 
 import common.ListNode;
 

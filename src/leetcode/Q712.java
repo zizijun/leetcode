@@ -1,5 +1,4 @@
-package leetcode.Q712;
-
+package leetcode;
 /**
  * Created by jinchuyang on 2018/1/15.
  */
