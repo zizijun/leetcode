@@ -1,7 +1,5 @@
 package leetcode;
 
-import common.ListNode;
-
 /**
  * Created by jinchuyang on 2017/12/3.
  */

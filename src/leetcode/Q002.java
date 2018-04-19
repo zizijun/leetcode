@@ -1,7 +1,5 @@
 package leetcode;
 
-import common.ListNode;
-
 /**
  * Created by jinchuyang on 2017/9/25.
  * You are given two non-empty linked lists representing two non-negative integers.

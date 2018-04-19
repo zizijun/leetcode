@@ -1,7 +1,5 @@
 package leetcode;
 
-import common.ListNode;
-
 import java.util.HashSet;
 import java.util.Set;
 
